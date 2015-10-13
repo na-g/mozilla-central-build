@@ -7,12 +7,12 @@ Building in a Dockerized environment has several benefits.
   3. The Dockerized environment can be created once and run on any machine with docker.
 
 ## Getting the container
-The container can be pulled from [Docker Hub](https://hub.docker.com/r/enaygee/mozilla-central-build/), and given a more convient tag.
+The container can be pulled from [Docker Hub](https://hub.docker.com/r/enaygee/mozilla-central-build/), and given a more convenient tag.
 
 ```sh
 #Pull the container from dockerhub
 docker pull enaygee/mozilla-central-build
-#After this you can reference the container as mozbild
+#After tagging one can reference the container as mozbild
 docker tag enaygee/mozilla-central-build mozbild
 ```
 
@@ -46,4 +46,4 @@ Everything is executed as the user "build" inside of the container.
 
 ## Customizing your configuration
 
-You can add a .mozbuild, and mercurial configuration to your SRC_MOUNT if you want to customize the build.
+You can add a .mozbuild, and mercurial configuration to your SRC_MOUNT if you want to customize the build. ccache is installed, and can be turned on in the .mozbuild file.
