@@ -7,7 +7,7 @@ Building in a Dockerized environment has several benefits.
   3. The Dockerized environment can be created once and run on any machine with docker.
 
 ## Getting the container
-The container can be pulled from [https://hub.docker.com/r/enaygee/mozilla-central-build/](Docker Hub), and given a more convient tag.
+The container can be pulled from [Docker Hub](https://hub.docker.com/r/enaygee/mozilla-central-build/), and given a more convient tag.
 
 ```sh
 #Pull the container from dockerhub
