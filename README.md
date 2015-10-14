@@ -30,17 +30,17 @@ The SRC_MOUNT is a pair of directories, the first is a directory __outside__ of 
 ```sh
 SRC_MOUNT=`pwd`/build:/home/build
 mkdir build
-docker run -it -v ${SRC_MOUNT} mozbild /bin/bash -c "cd /home/build && hg clone https://hg.mozilla.org/mozilla-central"
+docker run -it -v ${SRC_MOUNT} mozbild hg clone https://hg.mozilla.org/mozilla-central
 ```
 This will checkout the mozilla-central repository inside the build directory.
 
-## Runing a build
+## Running a build
 After checking out the code one can build it like so:
 
 ```sh
 SRC_MOUNT=`pwd`/build:/home/build
 docker run -it -v ${SRC_MOUNT} mozbild \
-	/bin/bash -c "cd /home/build/mozilla-central && ./mach build"
+	/bin/bash -c "cd mozilla-central && ./mach build"
 ```
 Everything is executed as the user "build" inside of the container.
 
