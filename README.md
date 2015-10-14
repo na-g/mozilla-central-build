@@ -46,4 +46,4 @@ Everything is executed as the user "build" inside of the container.
 
 ## Customizing your configuration
 
-You can add a .mozbuild, and mercurial configuration to your SRC_MOUNT if you want to customize the build. ccache is installed, and can be turned on in the .mozbuild file.
+You can add a .mozconfig, and mercurial configuration to your SRC_MOUNT if you want to customize the build. ccache is installed, and can be turned on in the .mozbuild file.
