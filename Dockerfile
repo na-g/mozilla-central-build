@@ -42,7 +42,8 @@ RUN useradd -ms /bin/bash build
 RUN chmod 777 /home/build
 USER build
 WORKDIR /home/build
-
+#Exporting the build home volume
+VOLUME /home/build
 #Allow mach to build without setting up mercurial
 ENV I_PREFER_A_SUBOPTIMAL_MERCURIAL_EXPERIENCE=true
 
