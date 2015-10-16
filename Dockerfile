@@ -9,6 +9,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install \
 	--no-install-recommends \
 	autoconf2.13 \
 	build-essential \
+  distcc \
 	ccache \
 	wget \
 	mercurial \
