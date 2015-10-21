@@ -50,3 +50,5 @@ ENV I_PREFER_A_SUBOPTIMAL_MERCURIAL_EXPERIENCE=true
 
 #Export a shell so that mach can identify the system as Linux
 ENV SHELL=/bin/bash
+
+LABEL na-g.mozilla-central-build.version="0.1"
