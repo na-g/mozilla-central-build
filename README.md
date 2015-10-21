@@ -47,3 +47,10 @@ Everything is executed as the user "build" inside of the container.
 ## Customizing your configuration
 
 You can add a [.mozconfig](https://developer.mozilla.org/en-US/docs/Configuring_Build_Options), and mercurial configuration to your SRC_MOUNT if you want to customize the build. ccache is installed, and can be turned on in the .mozbuild file.
+
+```sh
+#Must be an absolute path
+export MOZCONFIG=/home/build/mozconfig
+docker run -it -v ${SRC_MOUNT} -e MOZCONFIG=$MOZCONFIG
+```
+
