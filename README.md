@@ -6,6 +6,8 @@ Building in a Dockerized environment has several benefits.
   2. Consolidates project specific tool chain configuration.
   3. The Dockerized environment can be created once and run on any machine with docker.
 
+__Note:__ if you are using OS X and docker-machine or boot2docker, then you will experience an extreme slowdown to file access. This is a known issue, and one work around would be to use [docker-osx-dev](https://github.com/brikis98/docker-osx-dev).  Additionally, at this time only mount points inside of /User work on the OS X side.
+
 ## Getting the container
 The container can be pulled from [Docker Hub](https://hub.docker.com/r/enaygee/mozilla-central-build/), and given a more convenient tag.
 
